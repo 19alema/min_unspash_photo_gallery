@@ -1,0 +1,23 @@
+.photo_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3em;
+    /* grid-template-rows: repeat(3, 5vw); */
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.loading {
+    text-align: center;
+}

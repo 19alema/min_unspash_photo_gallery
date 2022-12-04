@@ -1,0 +1,52 @@
+.image {
+    position: relative;
+    height: 100%;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.image_container {
+    border-radius: 1em;
+    position: relative;
+    background-color: #000;
+    width: 100%;
+
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image_delete-btn, 
+.image_label {
+    position: absolute;
+    visibility: hidden;
+    font-size: 1.2em;
+}
+.image_delete-btn {
+    right: 1em;
+    top: 1em;
+    color: crimson;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.image_label {
+  
+    color: #eee;
+    font-weight: 600;
+    width: fit-content;
+    padding: .5em;
+    font-size: 1.5em;
+    width: 100%;
+    border-top: 5px solid #fff;
+    bottom: 0;
+}
+.image_container:hover  {
+    opacity: .5;
+    transition: opacity .5s ease;
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+}
+.image_container:hover .image_label, 
+.image_container:hover .image_delete-btn {
+    visibility: visible;
+    transition: visibility .5s ease-in;
+}

@@ -1,0 +1,99 @@
+label {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    font-weight: 500;
+}
+
+.add_photo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2em;
+    overflow: hidden;
+    margin: auto;;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.add_photo-content {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    padding: 2em;
+    border-radius: .8em;
+    animation: zoomIn .3s ease;
+}
+
+form div {
+    margin: 1.5em 0;
+}
+
+.add_photo-modal input {
+    padding: 1.5em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius:.8em;
+    outline: none;
+}
+
+.form_title {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    text-transform: capitalize;
+}
+
+.modal_close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: #fff;
+    font-size: 3em;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.form_button {
+    padding: 1.2em;
+    border: 1px solid var(--green-color);
+    border-radius:.8em;
+    display: block;
+    font-weight: 600;
+    background-color: var(--green-color);
+    color: #fff;
+    float: right;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 
+ANIMATION
+*/
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
